@@ -16,6 +16,8 @@
     <string name="txt_btn_calc_prog">PROGRAMACION</string>
     <string name="txt_btn_calc_graf">GRAFICACION</string>
 
+    <string name="txt_caja"></string>
+
     <string name="txt_btn_0">0</string>
     <string name="txt_btn_1">1</string>
     <string name="txt_btn_2">2</string>
