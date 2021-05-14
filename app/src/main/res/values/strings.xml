@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Sesion01_Ejemplo_GUI</string>
+
+
+    <string name="txt_desc_imagen">Logotipo de Usuario</string>
+
+    <string name="txt_usuario">Ingresa tu usuario</string>
+    <string name="txt_caja_usuario">Correo electronico</string>
+    <string name="txt_contraseña">Ingresa tu contraseña</string>
+    <string name="txt_caja_contraseña">Minimo 8 caracteres</string>
+    <string name="txt_btn_aceptar_login">ACCEDER</string>
+
+    <string name="txt_titulo_calculadoras">ELIGE TU CALCULADORA</string>
+    <string name="txt_btn_calc_sencilla">SENCILLA</string>
+    <string name="txt_btn_calc_cientifica">CIENTIFICA</string>
+    <string name="txt_btn_calc_prog">PROGRAMACION</string>
+    <string name="txt_btn_calc_graf">GRAFICACION</string>
+
+    <string name="txt_btn_0">0</string>
+    <string name="txt_btn_1">1</string>
+    <string name="txt_btn_2">2</string>
+    <string name="txt_btn_3">3</string>
+    <string name="txt_btn_4">4</string>
+    <string name="txt_btn_5">5</string>
+    <string name="txt_btn_6">6</string>
+    <string name="txt_btn_7">7</string>
+    <string name="txt_btn_8">8</string>
+    <string name="txt_btn_9">9</string>
+    <string name="txt_btn_dot">.</string>
+
+    <string name="txt_btn_suma">+</string>
+    <string name="txt_btn_resta">-</string>
+    <string name="txt_btn_multiplicacion">x</string>
+    <string name="txt_btn_divivision">÷</string>
+    <string name="txt_btn_residuo">%</string>
+    <string name="txt_btn_cuadrado">x²</string>
+    <string name="txt_btn_raiz">√</string>
+    <string name="txt_btn_entreX">1/x</string>
+    <string name="txt_btn_mas_menos">+/-</string>
+
+    <string name="txt_btn_igual">=</string>
+    <string name="txt_btn_del">Del</string>
+    <string name="txt_btn_CE">CE</string>
+    <string name="txt_btn_C">C</string>
+
+    <string name="txt_btn_mem_almacenar">MS</string>
+    <string name="txt_btn_mem_resta">M-</string>
+    <string name="txt_btn_mem_suma">M+</string>
+    <string name="txt_btn_mem_tope">MR</string>
+    <string name="txt_btn_mem_borrar">MC</string>
+
+
+</resources>

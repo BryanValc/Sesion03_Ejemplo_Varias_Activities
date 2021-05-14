@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_calc_senc"
+        android:layout_width="123dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="128dp"
+        android:onClick="accesoCalculadoraSencilla"
+        android:text="@string/txt_btn_calc_sencilla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calc_cient"
+        android:layout_width="123dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="96dp"
+        android:text="@string/txt_btn_calc_cientifica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calc_graf"
+        android:layout_width="123dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="352dp"
+        android:text="@string/txt_btn_calc_graf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calc_prog"
+        android:layout_width="123dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="352dp"
+        android:text="@string/txt_btn_calc_prog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/txt_titulo_calculadoras"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
