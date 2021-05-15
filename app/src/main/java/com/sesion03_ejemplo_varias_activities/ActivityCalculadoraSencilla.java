@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import java.lang.Math;
+import android.widget.TextView;
 import java.util.ArrayList;
 
 import androidx.annotation.Nullable;
@@ -16,7 +17,7 @@ public class ActivityCalculadoraSencilla extends Activity {
     EditText caja;
     String cache="";
     char op = ' ';
-    String memoria = "";
+    String memoria = "0";
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -60,24 +61,29 @@ public class ActivityCalculadoraSencilla extends Activity {
         }
     }
 
-    public void btnSuma(){
+    public void btnSuma(View v){
         cache = caja.getText().toString();
+        caja.setText("");
         op='+';
     }
-    public void btnResta(){
+    public void btnResta(View v){
         cache = caja.getText().toString();
+        caja.setText("");
         op='-';
     }
-    public void btnMultiplicacion(){
+    public void btnMultiplicacion(View v){
         cache = caja.getText().toString();
+        caja.setText("");
         op='*';
     }
-    public void btnDivision(){
+    public void btnDivision(View v){
         cache = caja.getText().toString();
+        caja.setText("");
         op='/';
     }
     public void btnResiduo(View v){
         cache = caja.getText().toString();
+        caja.setText("");
         op='%';
     }
     public void btnCuadrado(View v){
@@ -135,7 +141,7 @@ public class ActivityCalculadoraSencilla extends Activity {
         }
     }
     public void btnCE(View v){
-        memoria = "";
+        memoria = "0";
         op = ' ';
         cache = "";
         caja.setText("");
@@ -158,7 +164,7 @@ public class ActivityCalculadoraSencilla extends Activity {
         caja.setText(memoria);
     }
     public void btnMemBorrar(View v){
-        memoria="";
+        memoria="0";
     }
 
 
