@@ -54,7 +54,7 @@ public class ActivityCalculadoraCientifica extends Activity implements View.OnCl
     }
     public String octToBin(String oct){
         int onum = Integer.parseInt(oct,8);
-        return Integer.toOctalString(onum);
+        return Integer.toBinaryString(onum);
     }
     public String octToHex(String oct){
         int onum = Integer.parseInt(oct,8);
@@ -99,22 +99,66 @@ public class ActivityCalculadoraCientifica extends Activity implements View.OnCl
         if (checked){
             reestablecerCajas();
         }
+        String texto = caja.getText().toString();
+        if (texto.equals(""))
+            texto="0";
         switch(v.getId()) {
             case R.id.radio_binario:
-                if (checked)
+                if (checked){
                     Toast.makeText(this, "Convirtiendo a BINARIO", Toast.LENGTH_LONG).show();
+                    if(checkBoxBinario.isChecked()){
+                        cajaBinario.setText(texto);
+                    }
+                    if (checkBoxOctal.isChecked()){
+                        cajaOctal.setText(binToOct(texto));
+                    }
+                    if (checkBoxHexadecimal.isChecked()){
+                        cajaHexadecimal.setText(binToHex(texto));
+                    }
+                }
                 break;
             case R.id.radio_octal:
-                if (checked)
+                if (checked){
                     Toast.makeText(this, "Convirtiendo a OCTAL", Toast.LENGTH_LONG).show();
+                    if(checkBoxBinario.isChecked()){
+                        cajaBinario.setText(octToBin(texto));
+                    }
+                    if (checkBoxOctal.isChecked()){
+                        cajaOctal.setText(texto);
+                    }
+                    if (checkBoxHexadecimal.isChecked()){
+                        cajaHexadecimal.setText(octToHex(texto));
+                    }
+                }
+
                 break;
             case R.id.radio_decimal:
-                if (checked)
+                if (checked) {
                     Toast.makeText(this, "Convirtiendo a DECIMAL", Toast.LENGTH_LONG).show();
+                    if(checkBoxBinario.isChecked()){
+                        cajaBinario.setText(decToBin(texto));
+                    }
+                    if (checkBoxOctal.isChecked()){
+                        cajaOctal.setText(decToOct(texto));
+                    }
+                    if (checkBoxHexadecimal.isChecked()){
+                        cajaHexadecimal.setText(decToHex(texto));
+                    }
+                }
                 break;
             case R.id.radio_hexadecimal:
-                if (checked)
+                if (checked){
                     Toast.makeText(this, "Convirtiendo a HEXADECIMAL", Toast.LENGTH_LONG).show();
+                    if(checkBoxBinario.isChecked()){
+                        cajaBinario.setText(hexToBin(texto));
+                    }
+                    if (checkBoxOctal.isChecked()){
+                        cajaOctal.setText(hexToOct(texto));
+                    }
+                    if (checkBoxHexadecimal.isChecked()){
+                        cajaHexadecimal.setText(texto);
+                    }
+                }
                 break;
         }
     }
