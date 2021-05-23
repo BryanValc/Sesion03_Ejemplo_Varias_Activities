@@ -51,5 +51,11 @@
     <string name="txt_btn_mem_tope">MR</string>
     <string name="txt_btn_mem_borrar">MC</string>
 
+    <string name="txt_conversor">CONVERSOR</string>
+    <string name="radio_decimal">Decimal</string>
+    <string name="radio_binario">Binario</string>
+    <string name="radio_octal">Octal</string>
+    <string name="radio_hexadecimal">Hexadecimal</string>
+    <string name="txt_ingresa_numero">Ingresa numero:</string>
 
 </resources>

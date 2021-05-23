@@ -22,5 +22,10 @@ public class ActivityMenuPrincipal extends Activity {
 
     }
 
+    public void accesoCalculadoraCientifica(View v){
+        Intent i = new Intent(this, ActivityCalculadoraCientifica.class);
+        startActivity(i);
+    }
+
 
 }

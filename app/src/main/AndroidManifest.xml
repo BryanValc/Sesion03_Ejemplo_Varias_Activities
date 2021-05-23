@@ -19,7 +19,7 @@
 
         <activity android:name=".ActivityMenuPrincipal"></activity>
         <activity android:name=".ActivityCalculadoraSencilla"></activity>
-
+        <activity android:name=".ActivityCalculadoraCientifica"></activity>
     </application>
 
 </manifest>

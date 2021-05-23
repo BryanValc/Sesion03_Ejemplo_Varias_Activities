@@ -1,16 +1,10 @@
 package com.sesion03_ejemplo_varias_activities;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import java.lang.Math;
-import android.widget.TextView;
-import java.util.ArrayList;
-
-import androidx.annotation.Nullable;
-import androidx.core.app.RemoteInput;
 
 public class ActivityCalculadoraSencilla extends Activity {
 
@@ -21,7 +15,7 @@ public class ActivityCalculadoraSencilla extends Activity {
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calculadora_sencilla);
+        setContentView(R.layout.activity_calc_sencilla);
         caja = findViewById(R.id.caja);
     }
 
